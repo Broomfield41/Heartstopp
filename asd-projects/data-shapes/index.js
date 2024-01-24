@@ -1,47 +1,57 @@
-$(document).ready(function () {
-  /////////////////////////////////////////////////
-  // SETUP SECTION - DO NOT TOUCH /////////////////
-  /////////////////////////////////////////////////
+     $(document).ready(function () {
+     /////////////////////////////////////////////////
+     // SETUP SECTION - DO NOT TOUCH /////////////////
+     /////////////////////////////////////////////////
 
-  // These lines register functionality with the different buttons
-  $("#cycle-left").on("click", decrementIndex);
-  $("#cycle-right").on("click", incrementIndex);
-  $("#execute1").on("click", staticDisplay);
-  $("#execute2").on("click", goodDisplay);
-  $("#execute3").on("click", badDisplay);
+     // These lines register functionality with the different buttons
+     $("#cycle-left").on("click", decrementIndex);
+     $("#cycle-right").on("click", incrementIndex);
+     $("#execute1").on("click", staticDisplay);
+     $("#execute2").on("click", goodDisplay);
+     $("#execute3").on("click", badDisplay);
 
-  // These lines handle scheduling animations
-  const frameRate = 60;
-  setInterval(animate, 1000 / frameRate);
+      // These lines handle scheduling animations
+     const frameRate = 60;
+     setInterval(animate, 1000 / frameRate);
 
-  // These lines prepare an object to store animation details
-  let animationDetails = {
-    x: 148,
-    y: 148,
-    speedX: 2,
-    speedY: 1,
-    angle: 0,
-    showCount: 60,
-    show: true,
-    displayType: 0,
-  };
+     // These lines prepare an object to store animation details
+     let animationDetails = {
+       x: 148,
+       y: 148,
+       speedX: 2,
+       speedY: 1,
+       angle: 0,
+       showCount: 60,
+       show: true,
+       displayType: 0,
+      };
 
-  // This line produces most of the data array and stores it in the variable "dataShapes"
-  const dataShapes = generateShapeData();
-  var currentIndex = 0;
+     // This line produces most of the data array and stores it in the variable "dataShapes"
+     const dataShapes = generateShapeData();
+     var currentIndex = 0;
 
-  // This line sets the initial display
-  resetDisplay();
-
+     // This line sets the initial display
+     resetDisplay();
+   
   /////////////////////////////////////////////////
   // ALL OF YOUR CODE SHOULD GO BELOW HERE ////////
   /////////////////////////////////////////////////
 
   // TODO 1: create a new shape object and add it to the array
-  
+     var shape = {
+      key: color, value: "blue"
+      key: shape, value: "circle"
+      key: repeat, value: 3
+     }
+
+     dataShapes.push(shape)
 
   // TODO 2: add a new property to all data shapes
-  
+      for (var i = 0; i < dataShapes.length; i = i + 1) 
+      {
+        var currentShape = dataShapes
+      }
+
 
   // TODO 3-a: add a function that handles the static display type
   
