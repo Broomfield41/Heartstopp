@@ -1,17 +1,35 @@
 
 body {
-  background-color: darkgreen;
+  background-image: linear-gradient(to bottom, rgb(245, 156, 176), rgb(228, 93, 138));
+}
+
+#screen {
+margin:auto;
+text-align: center;
 }
 
 #board {
   width: 440px;
   height: 440px;
-  border: 1px solid white;
-  background-color: black;
+  border: 10px solid rgb(249, 201, 212);
+  background-color: rgb(84, 12, 24);
+  position: relative;
+  margin: auto;
+  overflow: hidden;
 }
 
-#score, #highScore {
-  color: white;
+#scoreCounter, #highScore {
+  color: rgb(84, 12, 24);
+  position: relative;
+  text-align: center
+}
+
+#restart {
+  color: rgb(84, 12, 24);
+  position: relative;
+  text-align: center;
+  margin: auto;
+  vertical-align: auto;
 }
 
 .snake, .apple {
